@@ -1,4 +1,5 @@
 import App, { Container } from 'next/app';
+import Head from 'next/head';
 import React from 'react';
 import withRedux from 'next-redux-wrapper';
 import withReduxSaga from 'next-redux-saga';
@@ -28,6 +29,9 @@ class MyApp extends App {
     const { Component, pageProps, store } = this.props;
     return (
       <Container>
+        <Head>
+          <title>Lava X | NextJS with Bulma Starter</title>
+        </Head>
         <Provider store={store}>
           <Layout>
             <Component {...pageProps} />
