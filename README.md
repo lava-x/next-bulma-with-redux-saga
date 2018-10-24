@@ -1,6 +1,11 @@
 # NextJs Starter
 
-> A Starter project for `nextJs` with implementation react, redux, redux-saga, selectors, immutable and Bulma CSS framework.
+> A Starter project for `nextJs` with implementation react, redux, redux-saga, selectors, immutable and [Bulma CSS framework](https://bulma.io/documentation/).
+
+
+## Demo
+https://codesandbox.io/s/github/louiskhenghao/next-bulma-with-redux-saga
+
 
 ## How to run app
 
@@ -67,6 +72,8 @@ serve -p 8080
   - `selectors.js` - Selectors are functions that take Redux state as an argument and return some data to pass to the component.
 - `store/RootReducers.js` - Combine of reducers from `redux store modules` (Remember to import `reducer` to `RootReducers` when adding new `store`). "Please be caution for clashing store name."
 - `store/RootSagas.js` - Combine of saga from `redux store modules` (Remember to import watcher function to `RootSagas` from your new `store` if you wants saga to keep an eye for your dispatched action)
+- `styles/theme.scss` - this is the place where we import bulma theme, you can choose to define what you need to use for your application
+- `styles/styles.scss` - this file is to define global styles for your application
 
 ## References
 
