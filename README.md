@@ -48,6 +48,10 @@ serve -p 8080
     - connector.jsx
 /pages
   - YourPage.js
+/screens
+  - /YourScreenComponent
+    - index.jsx
+    - styles.jsx
 /store
   - YourStoreName
     - actions.js
@@ -65,6 +69,7 @@ serve -p 8080
 - `components` folder is the place for `Dumb Component`, (Dumb components are also called ‘presentational’ components because their only responsibility is to present something to the DOM.)
 - `containers` folder is the place for `Smart Component`, (Smart components (or container components) on the other hand have a different responsibility. Because they have the burden of being smart, they are the ones that keep track of state and care about how the app works.)
 - `pages` folder is the place for pages to be served, by default nextJs will consume the js file as page route, (Example: there is a `mypages.js` file under `pages`, so to access this page i just go to `http://localhost:3000/mypages`)
+- `screens` folder is the place for pages component, each page component will have a component and its styles, the purpose to having these due to some people would love to seperate style and component in different files **_(This is optional)_**
 - `store` folder as the folder name, it is for redux store, we encourage developer to seperate their store to different `module`, and each `module` it should have
   - `actions.js` - Actions are payloads of information that send data from your application to your store. They are the only source of information for the store.
   - `reducers.js` - Reducers specify how the application's state changes in response to actions sent to the store. Remember that actions only describe what happened, but don't describe how the application's state changes.
